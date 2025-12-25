@@ -1,0 +1,31 @@
+# Planner / Task Manager Ledger
+
+## 2025-12-24 — spec-generation-framework bootstrap
+- Summary: Bootstrap governance scaffolding and the deterministic spec compiler pipeline.
+- Details:
+  - Align repository structure with the context-engineering governance contract.
+  - Implement PROMPT A compiler stages and CLI in TypeScript with deterministic rules.
+  - Recorded run receipt run-2025-12-24-bootstrap.
+- Related Spec / Skill: n/a
+- Pending Actions:
+  - Await user-provided project requirements after bootstrap.
+- Status: completed (2025-12-24T18:31:58-08:00)
+
+## 2025-12-24 — Framework sanitization
+- Summary: Remove business-specific intent/clarification artifacts to keep the framework generic and open-source ready.
+- Details:
+  - Deleted user-specific intent/clarification outputs and added ignore rules for compiler artifacts.
+  - Ensured core code/config remain framework-only.
+- Related Spec / Skill: n/a
+- Pending Actions:
+  - None; await new framework-agnostic inputs when running the compiler.
+- Status: completed (2025-12-24T23:42:32-08:00)
+
+## 2025-12-24 — GitHub publication
+- Summary: Prepare and publish the framework to GitHub (`holaymolay/spec-compiler-framework`).
+- Details:
+  - Initialize git repository, stage files, and push to new remote.
+- Related Spec / Skill: n/a
+- Pending Actions:
+  - Complete initial commit and push to GitHub.
+- Status: in_progress

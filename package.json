@@ -1,0 +1,29 @@
+{
+  "name": "spec-generation-framework",
+  "version": "0.1.0",
+  "description": "Deterministic spec compiler that turns human intent into governed specification artifacts.",
+  "private": true,
+  "bin": {
+    "spec-compile": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "lint": "echo \"Linting not yet configured\"",
+    "start": "node dist/cli.js"
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
