@@ -27,5 +27,5 @@
   - Initialize git repository, stage files, and push to new remote.
 - Related Spec / Skill: n/a
 - Pending Actions:
-  - Complete initial commit and push to GitHub.
+  - None.
 - Status: completed (2025-12-24T23:47:36-08:00)
