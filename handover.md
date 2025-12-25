@@ -12,6 +12,7 @@
 - Removed business-specific intent/clarification artifacts and added ignore rules so the framework remains generic/open-source ready.
 - Published the initial repository to GitHub (`holaymolay/spec-compiler-framework`).
 - Authored README_SPEC.yaml, vendored readme-spec-engine spec defaults, and generated validated README.md.
+- Added docs/usage.md and hardened README/README_SPEC to be explicit and step-by-step for new users.
 
 ## Next Steps
 - Capture the first intent payload via `spec-compile intent` once requirements arrive.

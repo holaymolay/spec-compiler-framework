@@ -39,3 +39,13 @@
 - Pending Actions:
   - None.
 - Status: completed (2025-12-24T23:51:59-08:00)
+
+## 2025-12-24 — Documentation hardening
+- Summary: Make documentation idiot-proof with explicit usage guidance and README updates.
+- Details:
+  - Added docs/usage.md with step-by-step pipeline instructions and refusal behaviors.
+  - Updated README_SPEC.yaml and regenerated README.md to highlight operation and integration.
+- Related Spec / Skill: n/a
+- Pending Actions:
+  - None.
+- Status: completed (2025-12-24T23:59:07-08:00)

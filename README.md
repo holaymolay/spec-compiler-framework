@@ -31,6 +31,7 @@ Expected outcomes:
 - Surface missing decisions as deterministic blocking questions until resolved.
 - Normalize clarified intent into governed specs with traceable validation and security defaults.
 - Validate specs against non-negotiable rules and synthesize Codex prompts only on passing validation.
+- Document how to operate the pipeline (local or CI) without LLMs or implicit assumptions.
 
 ## Quick Start
 
@@ -59,6 +60,8 @@ Run these steps:
 | CHANGELOG.md | Changelog entries per completed task. | yes |
 | tsconfig.json | TypeScript compiler settings for the CLI. | yes |
 | package.json | Project metadata, scripts, and runtime dependencies. | yes |
+| spec/ | README generation templates (sections, rules, tone) for readme-spec-engine. | yes |
+| docs/usage.md | Step-by-step instructions for running the compiler pipeline and interpreting artifacts. | yes |
 
 ## Non-Goals
 

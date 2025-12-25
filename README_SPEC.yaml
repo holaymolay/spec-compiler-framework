@@ -15,6 +15,7 @@ outcomes:
   - "Surface missing decisions as deterministic blocking questions until resolved."
   - "Normalize clarified intent into governed specs with traceable validation and security defaults."
   - "Validate specs against non-negotiable rules and synthesize Codex prompts only on passing validation."
+  - "Document how to operate the pipeline (local or CI) without LLMs or implicit assumptions."
 quick_start:
   - "npm install"
   - "npm run build"
@@ -48,6 +49,10 @@ repo_map:
     description: "TypeScript compiler settings for the CLI."
   - path: "package.json"
     description: "Project metadata, scripts, and runtime dependencies."
+  - path: "spec/"
+    description: "README generation templates (sections, rules, tone) for readme-spec-engine."
+  - path: "docs/usage.md"
+    description: "Step-by-step instructions for running the compiler pipeline and interpreting artifacts."
 non_goals:
   - "Generate application code or business logic."
   - "Invoke LLMs or infer requirements automatically."
