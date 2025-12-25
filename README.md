@@ -1,0 +1,79 @@
+# spec-compiler-framework
+
+## Why This Exists
+
+Deterministic CLI pipeline that converts raw human intent into governed specification artifacts.
+
+## Audience
+
+**Include**
+- Repository maintainers who need enforceable, audit-friendly specs from human intent.
+- Governance and platform engineers standardizing spec workflows for downstream automation.
+- Operators running deterministic pipelines that must refuse ambiguous inputs.
+
+**Exclude**
+- Teams seeking automatic requirement generation or creative drafting.
+- Workflows that allow LLMs or tools to fill in missing decisions implicitly.
+
+## Problem
+
+Specs generated with ad hoc prompts or LLM retries drift, hide assumptions, and cannot be audited or trusted for downstream automation.
+
+## Solution
+
+A compiler-style CLI with hard stage gates (intent capture, clarification, normalization, validation, prompt synthesis) that refuses to proceed on missing decisions, enforces governance rules mechanically, and emits Codex-ready prompts only after deterministic checks pass.
+
+## Outcomes
+
+Expected outcomes:
+
+- Capture raw human intent without normalization or enrichment.
+- Surface missing decisions as deterministic blocking questions until resolved.
+- Normalize clarified intent into governed specs with traceable validation and security defaults.
+- Validate specs against non-negotiable rules and synthesize Codex prompts only on passing validation.
+
+## Quick Start
+
+Run these steps:
+
+1. npm install
+2. npm run build
+3. node dist/cli.js intent --input intent/intent.raw.yaml
+4. node dist/cli.js clarify
+5. node dist/cli.js normalize --spec-id <id> && node dist/cli.js validate --spec-id <id> && node dist/cli.js synthesize --spec-id <id>
+
+## Repository Map
+
+| Path | Description | Exists |
+| --- | --- | --- |
+| README_SPEC.yaml | Authoritative input for README generation via readme-spec-engine. | yes |
+| src/ | TypeScript sources for the compiler stages and CLI entrypoint. | yes |
+| config/framework.yaml | Framework concepts, synchronizations, and security defaults. | yes |
+| scripts/ | Run-record helpers for deterministic audit logs. | yes |
+| runs/ | Run receipts captured per task. | yes |
+| docs/context/ | Agent context ledgers per governance workflow. | yes |
+| todo.md | AI-managed task list; populate via todo-inbox.md. | yes |
+| backlog.md | AI-managed backlog of future work. | yes |
+| completed.md | AI-managed log of completed tasks. | yes |
+| handover.md | Current focus, recent progress, and next steps. | yes |
+| CHANGELOG.md | Changelog entries per completed task. | yes |
+| tsconfig.json | TypeScript compiler settings for the CLI. | yes |
+| package.json | Project metadata, scripts, and runtime dependencies. | yes |
+
+## Non-Goals
+
+This tool explicitly avoids:
+
+- Generate application code or business logic.
+- Invoke LLMs or infer requirements automatically.
+- Proceed past stage gates when clarification is incomplete.
+- Bypass governance validation or acceptance criteria mapping.
+- Serve as a general-purpose documentation generator beyond this compiler.
+
+## Constraints
+
+Hard constraints:
+
+- Max length: 5200 chars
+- Banned terms: magic, automagic
+- Tone profile: neutral

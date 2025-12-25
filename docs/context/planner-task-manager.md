@@ -29,3 +29,13 @@
 - Pending Actions:
   - None.
 - Status: completed (2025-12-24T23:47:36-08:00)
+
+## 2025-12-24 — README generation
+- Summary: Generate README.md deterministically via readme-spec-engine.
+- Details:
+  - Authored README_SPEC.yaml and vendored default readme-spec-engine spec files.
+  - Generated and validated README.md using readme-spec-engine tooling.
+- Related Spec / Skill: n/a
+- Pending Actions:
+  - None.
+- Status: completed (2025-12-24T23:51:59-08:00)

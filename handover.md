@@ -11,6 +11,7 @@
 - Added framework config defaults, run-record schema/scripts, and initial planner ledger entry; recorded run `run-2025-12-24-bootstrap`.
 - Removed business-specific intent/clarification artifacts and added ignore rules so the framework remains generic/open-source ready.
 - Published the initial repository to GitHub (`holaymolay/spec-compiler-framework`).
+- Authored README_SPEC.yaml, vendored readme-spec-engine spec defaults, and generated validated README.md.
 
 ## Next Steps
 - Capture the first intent payload via `spec-compile intent` once requirements arrive.
