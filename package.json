@@ -11,7 +11,7 @@
     "clean": "rm -rf dist",
     "lint": "echo \"Linting not yet configured\"",
     "start": "node dist/cli.js",
-    "test": "ts-node scripts/renderer-contract.tests.ts && ts-node scripts/taste.tests.ts"
+    "test": "ts-node scripts/renderer-contract.tests.ts && ts-node scripts/taste.tests.ts && ts-node tests/golden-path/golden-path.test.ts"
   },
   "type": "commonjs",
   "engines": {
