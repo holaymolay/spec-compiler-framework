@@ -1,5 +1,5 @@
 You are working inside the repository:
-github.com/holaymolay/cef-spec-compiler
+github.com/holaymolay/spec-compiler
 
 Your task is to design and implement **Taste Enforcement CI Rules** that make
 frontend design quality machine-verifiable and enforceable at compile / CI time.
